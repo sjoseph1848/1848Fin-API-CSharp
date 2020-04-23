@@ -10,19 +10,6 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
-      },
-      "API.Data/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Newtonsoft.Json": "12.0.3"
-        },
-        "compile": {
-          "bin/placeholder/API.Data.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/API.Data.dll": {}
-        }
       }
     }
   },
@@ -57,16 +44,10 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
-    },
-    "API.Data/1.0.0": {
-      "type": "project",
-      "path": "../API.Data/API.Data/API.Data.csproj",
-      "msbuildProject": "../API.Data/API.Data/API.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "API.Data >= 1.0.0",
       "Newtonsoft.Json >= 12.0.3"
     ]
   },
@@ -78,11 +59,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sjose\\Desktop\\Fin\\Fin\\Fin\\Fin.csproj",
-      "projectName": "Fin",
-      "projectPath": "C:\\Users\\sjose\\Desktop\\Fin\\Fin\\Fin\\Fin.csproj",
+      "projectUniqueName": "C:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\API.Data.csproj",
+      "projectName": "API.Data",
+      "projectPath": "C:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\API.Data.csproj",
       "packagesPath": "C:\\Users\\sjose\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sjose\\Desktop\\Fin\\Fin\\Fin\\obj\\",
+      "outputPath": "C:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -102,11 +83,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {
-            "C:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\API.Data.csproj": {
-              "projectPath": "C:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\API.Data.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -134,9 +111,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

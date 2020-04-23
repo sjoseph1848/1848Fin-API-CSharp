@@ -18,3 +18,7 @@ C:\Users\sjose\Desktop\Fin\Fin\Fin\obj\Debug\netcoreapp3.1\staticwebassets\Fin.S
 C:\Users\sjose\Desktop\Fin\Fin\Fin\obj\Debug\netcoreapp3.1\Fin.dll
 C:\Users\sjose\Desktop\Fin\Fin\Fin\obj\Debug\netcoreapp3.1\Fin.pdb
 C:\Users\sjose\Desktop\Fin\Fin\Fin\obj\Debug\netcoreapp3.1\Fin.genruntimeconfig.cache
+C:\Users\sjose\Desktop\Fin\Fin\Fin\bin\Debug\netcoreapp3.1\API.Data.dll
+C:\Users\sjose\Desktop\Fin\Fin\Fin\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\sjose\Desktop\Fin\Fin\Fin\bin\Debug\netcoreapp3.1\API.Data.pdb
+C:\Users\sjose\Desktop\Fin\Fin\Fin\obj\Debug\netcoreapp3.1\Fin.csproj.CopyComplete
