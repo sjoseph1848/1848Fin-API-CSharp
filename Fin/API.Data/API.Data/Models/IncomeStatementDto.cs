@@ -6,7 +6,7 @@ namespace API.Data.Models
 {
     public class IncomeStatementDto
     {
-        public string Symbol { get; set; }
+        public string symbol { get; set; }
 
         public IncomeStatementDetailDto[] financials {get;set;}
         
