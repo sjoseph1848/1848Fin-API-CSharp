@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\API.Data.csproj": {}
+    "C:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\API.Data.csproj": {}
   },
   "projects": {
-    "c:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\API.Data.csproj": {
+    "C:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\API.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\API.Data.csproj",
+        "projectUniqueName": "C:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\API.Data.csproj",
         "projectName": "API.Data",
-        "projectPath": "c:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\API.Data.csproj",
+        "projectPath": "C:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\API.Data.csproj",
         "packagesPath": "C:\\Users\\sjose\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\obj\\",
+        "outputPath": "C:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

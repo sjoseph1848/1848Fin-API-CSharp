@@ -24,7 +24,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Fin/1.0.0": {
         "dependencies": {
-          "API.Data": "1.0.0",
+          "Fin.BL": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -327,15 +327,15 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "API.Data/1.0.0": {
+      "Fin.BL/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
-          "API.Data.dll": {}
+          "Fin.BL.dll": {}
         },
         "compile": {
-          "API.Data.dll": {}
+          "Fin.BL.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -2045,7 +2045,7 @@
       "path": "newtonsoft.json/12.0.3",
       "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     },
-    "API.Data/1.0.0": {
+    "Fin.BL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

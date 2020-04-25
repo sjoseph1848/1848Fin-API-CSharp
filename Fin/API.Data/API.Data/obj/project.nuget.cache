@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SkaKQZJ2RnaQ8FVCd4BDc1JZaiilbo9lPcMV9cOTUqIbdM4VxU9yCJJhhhiZgUA3AcYyAOhEyewLkS6iJaCryQ==",
+  "dgSpecHash": "kEO3RT9pWS8mTHnC3Fn1uDH7APsX4Muv90D/IXqr+eBNQlsl/YA3T20CJA40Lg7T1PwyKA5fAdUoN8gkNLiTzQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\API.Data.csproj",
+  "projectFilePath": "C:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\Fin.BL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sjose\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],

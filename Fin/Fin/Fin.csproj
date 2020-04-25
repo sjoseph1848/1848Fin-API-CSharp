@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\API.Data\API.Data\API.Data.csproj" />
+    <ProjectReference Include="..\API.Data\API.Data\Fin.BL.csproj" />
   </ItemGroup>
 
 

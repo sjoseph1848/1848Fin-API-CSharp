@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fin", "Fin\Fin.csproj", "{E728D7E1-406B-4881-83B6-8EDAF3953CB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.Data", "API.Data\API.Data\API.Data.csproj", "{CCD3DCED-017E-4D29-B2EC-FD2A84A6BFAC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fin.BL", "API.Data\API.Data\Fin.BL.csproj", "{CCD3DCED-017E-4D29-B2EC-FD2A84A6BFAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

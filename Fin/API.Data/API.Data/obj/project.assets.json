@@ -59,9 +59,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\API.Data.csproj",
-      "projectName": "API.Data",
-      "projectPath": "C:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\API.Data.csproj",
+      "projectUniqueName": "C:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\Fin.BL.csproj",
+      "projectName": "Fin.BL",
+      "projectPath": "C:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\Fin.BL.csproj",
       "packagesPath": "C:\\Users\\sjose\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\sjose\\Desktop\\Fin\\Fin\\API.Data\\API.Data\\obj\\",
       "projectStyle": "PackageReference",
