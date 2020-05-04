@@ -10,8 +10,8 @@ namespace Fin.BL.Models
         public string Date { get; set; }
         public double Revenue { get; set; }
 
-        //[JsonProperty(PropertyName = "Revenue Growth")]
-        //public string RevenueGrowth { get; set; }
+        [JsonProperty(PropertyName = "Revenue Growth")]
+        public string RevenueGrowth { get; set; }
 
         //[JsonProperty(PropertyName = "Cost of Revenue")]
         //public string CostRevenue { get; set; }
