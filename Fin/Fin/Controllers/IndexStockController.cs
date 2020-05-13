@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Fin.Biz;
 using Fin.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -30,8 +31,9 @@ namespace Fin.Controllers
                     json = await content.ReadAsStringAsync();
                 }
                 IndexDto stock = JsonConvert.DeserializeObject<IndexDto>(json);
-                stock = _stockFormatter.GetCurrentYear(stock);
-                return Ok(stock);
+                var format = stock.Historical;
+                var newFormat = _stockFormatter.GetCurrentYear(format);
+                return Ok(newFormat);
             }
         }
     }

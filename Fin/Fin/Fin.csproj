@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Fin.Biz\Fin.Biz.csproj" />
     <ProjectReference Include="..\Fin.Models\Fin.Models.csproj" />
   </ItemGroup>
 

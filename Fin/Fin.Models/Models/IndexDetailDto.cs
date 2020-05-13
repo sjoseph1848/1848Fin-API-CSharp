@@ -6,7 +6,7 @@ namespace Fin.Models
 {
     public class IndexDetailDto
     {
-        public string Date { get; set; }
+        public DateTime Date { get; set; }
         public decimal Open { get; set; }
 
         //public double High { get; set; }
