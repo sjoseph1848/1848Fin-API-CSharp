@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Fin.BL.Models
+namespace Fin.Models
 {
    public class IncomeStatementDetailDto
     {

@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Fin.BL;
-using Fin.BL.Models;
-using Microsoft.AspNetCore.Http;
+using Fin.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -15,6 +11,12 @@ namespace Fin.Controllers
     [ApiController]
     public class IndexStockController : ControllerBase
     {
+        private IndexStock _stockFormatter;
+        public IndexStockController(IndexStock stockFormatter)
+        {
+            _stockFormatter = stockFormatter;
+        }
+
         [HttpGet]
         public async Task<IActionResult> GetIndex()
         {
@@ -27,7 +29,8 @@ namespace Fin.Controllers
                 {
                     json = await content.ReadAsStringAsync();
                 }
-                var stock = JsonConvert.DeserializeObject<IndexDto>(json);
+                IndexDto stock = JsonConvert.DeserializeObject<IndexDto>(json);
+                stock = _stockFormatter.GetCurrentYear(stock);
                 return Ok(stock);
             }
         }

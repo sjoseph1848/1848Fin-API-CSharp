@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\API.Data\API.Data\Fin.BL.csproj" />
+    <ProjectReference Include="..\Fin.Models\Fin.Models.csproj" />
   </ItemGroup>
 
 
