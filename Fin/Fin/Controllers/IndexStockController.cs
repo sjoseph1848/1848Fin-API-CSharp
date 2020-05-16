@@ -18,12 +18,12 @@ namespace Fin.Controllers
             _stockFormatter = stockFormatter;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetIndex()
+        [HttpGet("{symbol}")]
+        public async Task<IActionResult> GetIndex(string symbol)
         {
             using (var client = new HttpClient())
             {
-                var url = new Uri("https://financialmodelingprep.com/api/v3/historical-price-full/index/%5EGSPC");
+                var url = new Uri($"https://financialmodelingprep.com/api/v3/historical-price-full/index/{symbol}");
                 var response = await client.GetAsync(url);
                 string json;
                 using (var content = response.Content)
@@ -32,7 +32,7 @@ namespace Fin.Controllers
                 }
                 IndexDto stock = JsonConvert.DeserializeObject<IndexDto>(json);
                 var format = stock.Historical;
-                var newFormat = _stockFormatter.GetCurrentYear(format);
+                var newFormat = _stockFormatter.GetMonthlyAverage(format);
                 return Ok(newFormat);
             }
         }
