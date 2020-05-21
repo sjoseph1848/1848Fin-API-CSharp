@@ -19,7 +19,6 @@ namespace Fin
     public class Startup
     {
         private readonly IConfiguration _config;
-
         public Startup(IConfiguration config)
         {
             _config = config;
@@ -30,6 +29,18 @@ namespace Fin
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:4200",
+                                            "https://1848fin.com",
+                                            "https://1848finapi.azurewebsites.net");
+                    });
+            });
+
             services.AddScoped<IndexStock>();
             services.AddControllers();
             services.AddDbContext<StoreContext>(x => x.UseSqlServer(_config.GetConnectionString("DefaultConnection")));
@@ -44,7 +55,7 @@ namespace Fin
             }
 
             app.UseRouting();
-
+            app.UseCors();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

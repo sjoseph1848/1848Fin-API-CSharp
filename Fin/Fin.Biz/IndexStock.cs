@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Linq;
 using System.Threading.Tasks;
+using Fin.Models.Models;
 
 namespace Fin.Biz
 {
@@ -65,6 +66,16 @@ namespace Fin.Biz
             monthlyAverages.Add(may);
 
             return monthlyAverages;
+        }
+
+        public IEnumerable<IndexCurrentDetailDto> GetCurrentIndexAmount(List<IndexCurrentDetailDto> format)
+        {
+            var mostRecentIndex = new List<IndexCurrentDetailDto>();
+
+            mostRecentIndex.Add(format[0]);
+            mostRecentIndex.Add(format[1]);
+
+            return mostRecentIndex;
         }
 
 
