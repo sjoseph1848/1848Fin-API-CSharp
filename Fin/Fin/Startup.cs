@@ -13,6 +13,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using System.Net.Http.Headers;
+using Microsoft.CodeAnalysis.Options;
 
 namespace Fin
 {
@@ -40,7 +42,14 @@ namespace Fin
                                             "https://1848finapi.azurewebsites.net");
                     });
             });
-
+            services.AddHttpClient(name: "NewsService",
+                configureClient: options =>
+                {
+                    options.BaseAddress = new Uri("https://newsapi.org/v2/");
+                    options.DefaultRequestHeaders.Accept.Add(
+                        new MediaTypeWithQualityHeaderValue(
+                            "application/json", 1.0));
+                });
             services.AddScoped<IndexStock>();
             services.AddControllers();
             services.AddDbContext<StoreContext>(x => x.UseSqlServer(_config.GetConnectionString("DefaultConnection")));
